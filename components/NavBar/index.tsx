@@ -11,7 +11,11 @@ const NavBar = () => {
     <S.NavBar>
       <S.ContainerLeft>
         <Image src={charizardImg} width={30} height={30} alt="PokeNext" />
-        <S.Title>PokeNext</S.Title>
+        <S.Title>
+          <Link href="/">
+            <S.LinkTitle>PokeNext</S.LinkTitle>
+          </Link>
+        </S.Title>
       </S.ContainerLeft>
       <S.LinkContainer>
         <S.LinkItens>

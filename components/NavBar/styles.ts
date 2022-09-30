@@ -18,6 +18,13 @@ export const ContainerLeft = styled.div`
 
 export const Title = styled.h1`
   margin-left: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+`;
+
+export const LinkTitle = styled.a`
+  cursor: pointer;
+  text-decoration: none;
 `;
 
 export const LinkContainer = styled.ul`
