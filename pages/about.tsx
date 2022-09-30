@@ -8,8 +8,8 @@ const About = () => {
     <S.Container>
       <S.Title>Sobre o projeto</S.Title>
       <S.Paragraph>
-        Projeto desenvolvido para treinar e me aprimorar com o consumo de API's
-        e também por que eu gosto muito da franquia Pokémon. Foram utilizadas as
+        Projeto desenvolvido para treinar e me aprimorar com o consumo de APIs e
+        também por que eu gosto muito da franquia Pokémon. Foram utilizadas as
         seguintes tecnologias:{" "}
         <S.Technologies>
           Next, TypeScript, Styled Components, Axios
