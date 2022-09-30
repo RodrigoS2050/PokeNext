@@ -11,7 +11,7 @@ export const Paragraph = styled.p`
   max-width: 500px;
   margin: 0 auto 1.5rem;
   line-height: 1.4;
-  @media (max-width: 380px) {
+  @media (max-width: 520px) {
     padding: 10px;
   }
 `;
