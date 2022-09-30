@@ -1,26 +1,63 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.main-container {
+  min-height: 70vh;
+}
+.type_normal {
+  background-color: #aa9;
+}
+.type_fire {
+  background-color: #f42;
+}
+.type_water {
+  background-color: #39f;
+}
+.type_electric {
+  background-color: #fc3;
+}
+.type_grass {
+  background-color: #7c5;
+}
+.type_ice {
+  background-color: #6cf;
+}
+.type_fighting {
+  background-color: #b54;
+}
+.type_poison {
+  background-color: #a59;
+}
+.type_ground {
+  background-color: #db5;
+}
+.type_flying {
+  background-color: #89f;
+}
+.type_psychic {
+  background-color: #f59;
+}
+.type_bug {
+  background-color: #ab2;
+}
+.type_rock {
+  background-color: #ba6;
+}
+.type_ghost {
+  background-color: #66b;
+}
+.type_dragon {
+  background-color: #3a20e4;
+}
+.type_dark {
+  background-color: #754;
+}
+.type_steel {
+  background-color: #aab;
+}
+.type_fairy {
+  background-color: #e9e;
 }
