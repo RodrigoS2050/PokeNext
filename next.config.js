@@ -6,7 +6,7 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    domains: ['cdn.traction.one', "raw.githubusercontent.com"],
+    domains: ["raw.githubusercontent.com"],
   },
 }
 

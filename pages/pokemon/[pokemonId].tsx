@@ -50,11 +50,11 @@ const Pokemon = ({ pokemon }: Props) => {
     getImages();
   }, []);
   async function getImages() {
-    const response = await fetch(
-      `https://pokeapi.co/api/v2/pokemon/${pokemon.name}`
-    );
-    const json = await response.json();
-    setData(json);
+    const http = axios.create({
+      baseURL: "https://pokeapi.co/api/v2/pokemon/",
+    });
+    const response = await http.get(pokemon.name);
+    setData(response.data);
   }
   if (!data) return null;
   return (
