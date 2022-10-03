@@ -6,6 +6,7 @@
 - Adicionado a biblioteca Styled Components para estilização
 - Adicionada a biblioteca Axios para consumo de API
 - Adicionado Link para página Home no titulo do Header
+- Correção nas imagens puxando diretamente da API
 
 # Tecnologias
 
