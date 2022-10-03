@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Pokemon } from "../../types/Pokemon";
 import axios from "axios";
 import { ParsedUrlQuery } from "querystring";
@@ -45,7 +45,18 @@ export const getStaticProps: GetStaticProps = async (context) => {
 };
 
 const Pokemon = ({ pokemon }: Props) => {
-  if (!pokemon) return null;
+  const [data, setData] = useState<any>(null);
+  useEffect(() => {
+    getImages();
+  }, []);
+  async function getImages() {
+    const response = await fetch(
+      `https://pokeapi.co/api/v2/pokemon/${pokemon.name}`
+    );
+    const json = await response.json();
+    setData(json);
+  }
+  if (!data) return null;
   return (
     <S.PokemonContainer>
       <Link href="/">
@@ -53,9 +64,9 @@ const Pokemon = ({ pokemon }: Props) => {
       </Link>
       <S.PokemonTitle>{pokemon.name}</S.PokemonTitle>
       <Image
-        src={`https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png`}
-        width={200}
-        height={200}
+        src={data.sprites.front_default}
+        width={250}
+        height={250}
         alt={pokemon.name}
       />
       <div>
